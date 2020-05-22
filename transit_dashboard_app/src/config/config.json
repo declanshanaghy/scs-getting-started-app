@@ -1,9 +1,10 @@
 {
     "auth": {
-        "clientId": "YOUR CLIENT ID",
-        "grantType": "implicit OR pkce",
-        "redirectUri": "http://REDIRECT_URI.com"
+        "clientId": "REDACTED",
+        "grantType": "implicit",
+        "redirectUri": "http://localhost:3000",
+        "authHost": "REDACTED"
     },
-    "tenantId": "YOUR TENANT ID",
-    "cloudApiUrl": "https://api.scp.splunk.com"
+    "tenantId": "REDACTED",
+    "cloudApiUrl": "REDACTED"
 }

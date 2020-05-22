@@ -235,9 +235,14 @@ To build and run the app:
     ```
 
 3.  In the **./src/config/config.json** file, update the following values: 
-    * Replace `YOUR CLIENT ID` with your client ID.
-    * Replace `YOUR TENANT ID` with your tenant name.
-
+    * Set "clientId" to the clientId of the app you created.
+    * Set "tenant" to the name of the tenant you created.
+    * Set "grantType" to "implicit"
+    * Add "authHost" to to our internal environment Authentication URL 
+    * Set "cloudApiUrl" to our internal environment API URL
+    
+    [Get valid values for internal URL configs in confluence](https://confluence.splunk.com/display/~dshanaghy/scloud+commands+to+use+with+SCS+Getting+Started+Tutorial) 
+    
 4.  Start the example app in develop mode: 
     
     ```

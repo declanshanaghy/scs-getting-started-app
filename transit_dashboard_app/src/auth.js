@@ -23,8 +23,11 @@ import { auth as authConfig } from './config/config.json';
   * to the app.
   */
 export default new SplunkAuthClient(
-  new SplunkAuthClientSettings(
-    authConfig.grantType,
-    authConfig.clientId,
-    authConfig.redirectUri || window.location.origin)
+    new SplunkAuthClientSettings(
+        authConfig.grantType,
+        authConfig.clientId,
+        authConfig.redirectUri || window.location.origin,
+        undefined,
+        authConfig.authHost
+    )
 );
